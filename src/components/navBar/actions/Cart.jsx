@@ -3,13 +3,13 @@ import { assets } from "../../../assets/assets";
 
 const Cart = () => {
   return (
-    <div className="relative cursor-pointer ">
+    <div className="relative cursor-pointer">
       <img
         src={assets.cart_icon}
         alt="cart icon"
-        className="w-4 h-5 md:w-5 md:h-6"
+        className="h-5 w-4 md:h-6 md:w-5"
       />
-      <span className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-Dark text-light text-13 absolute bottom-[-8px] right-[-10px] justify-center items-center flex">
+      <span className="text-light text-13 absolute right-[-10px] bottom-[-8px] flex h-4 w-4 items-center justify-center rounded-full bg-black md:h-5 md:w-5">
         1
       </span>
     </div>
