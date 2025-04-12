@@ -18,7 +18,7 @@ const LatestCollection = () => {
   }, []);
 
   return (
-    <div className="mx-10 pt-5 pb-20 sm:mx-24 lg:mx-44">
+    <div className="mx-7 pt-5 pb-20 sm:mx-24 lg:mx-44">
       <SectionTitle text1="Latest" text2="Collections" />
       <SectionParagraph text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the." />
       <div className="grid grid-cols-2 gap-x-7 gap-y-8 pt-11 sm:grid-cols-3 md:grid-cols-4 md:gap-y-11 lg:grid-cols-5">

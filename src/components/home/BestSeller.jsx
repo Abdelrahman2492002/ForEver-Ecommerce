@@ -7,7 +7,7 @@ import ProductCard from "../common/ProductCard";
 const BestSeller = () => {
   const allProducts = useShopStore((state) => state.products);
   return (
-    <div className="mx-10 pt-5 pb-20 sm:mx-24 lg:mx-44">
+    <div className="mx-7 pt-5 pb-20 sm:mx-24 lg:mx-44">
       <SectionTitle text1="best" text2="seller" />
       <SectionParagraph
         text="Lorem Ipsum is simply dummy text of the printing and typesetting

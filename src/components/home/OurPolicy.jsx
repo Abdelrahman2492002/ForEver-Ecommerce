@@ -4,7 +4,7 @@ import { assets } from "../../assets/assets";
 
 const OurPolicy = () => {
   return (
-    <div className="mx-10 pt-5 pb-20 sm:mx-24 lg:mx-44">
+    <div className="mx-7 pt-5 pb-20 sm:mx-24 lg:mx-44">
       <div className="flex flex-wrap justify-evenly gap-x-8 gap-y-16">
         <OurPolicyCard
           image={assets.exchange_icon}
