@@ -6,16 +6,7 @@ import SectionTitle from "../common/SectionTitle";
 import ProductCard from "../common/ProductCard";
 
 const LatestCollection = () => {
-  const setProducts = useShopStore((state) => state.setProducts);
   const allProducts = useShopStore((state) => state.products);
-
-  const fetchProduct = async () => {
-    setProducts(products);
-  };
-
-  useEffect(() => {
-    fetchProduct();
-  }, []);
 
   return (
     <div className="mx-7 pt-5 pb-20 sm:mx-24 lg:mx-44">

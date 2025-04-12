@@ -5,8 +5,21 @@ import Collection from "./pages/Collection";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/footer/Footer";
+import { useShopStore } from "./store/shopStore";
+import { useEffect } from "react";
+import { products } from "./assets/assets";
 
 const App = () => {
+  const setProducts = useShopStore((state) => state.setProducts);
+
+  const fetchProduct = async () => {
+    setProducts(products);
+  };
+
+  useEffect(() => {
+    fetchProduct();
+  }, []);
+
   return (
     <div className="font-outfit">
       <NavBar />

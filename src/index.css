@@ -8,6 +8,7 @@
   --color-dark: #171717;
   --color-darkMed: #212121;
   --color-darkLight: #2a2a2a;
+  --color-darkLight2: #343434;
 
   --color-greyDark: #373737;
   --color-greyMed: #494949;
@@ -21,6 +22,8 @@
 
   --color-borderColor: #adadad;
   --color-borderColor2: #c7c7c7;
+  --color-borderColor3: #c1c1c1;
+  --color-borderColor4: #c8c8c8;
 
   --text-13: 13px;
 }
