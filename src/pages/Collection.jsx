@@ -2,7 +2,7 @@ import CollectionHeader from "../components/collections/CollectionHeader";
 import CollectionFilter from "../components/collections/collection-filter/CollectionFilter";
 import FilterTitle from "../components/collections/collection-filter/FilterTitle";
 import FilterCheckbox from "../components/collections/collection-filter/FilterCheckbox";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import FilterHeader from "../components/collections/collection-filter/FilterHeader";
 import ProductCard from "../components/common/ProductCard";
 
@@ -31,7 +31,6 @@ const Collection = () => {
     const order = orderProducts(filtered, orderPrice);
     setFilteredProducts(order);
   }, [allProducts, category, typeCategory, orderPrice]);
-  console.log(filterdProducts);
 
   return (
     <div className="mx-8 min-h-screen pt-7 pb-96 sm:mx-16 lg:mx-36">
