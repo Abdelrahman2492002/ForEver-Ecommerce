@@ -3,7 +3,7 @@ import { assets } from "../../../assets/assets";
 const FilterHeader = ({ showFilter, toggleShowFilter }) => {
   return (
     <div
-      onClick={() => toggleShowFilter}
+      onClick={toggleShowFilter}
       className="flex items-center gap-2 max-sm:cursor-pointer"
     >
       <h3 className="text-darkLight2 text-2xl font-light sm:text-3xl">
