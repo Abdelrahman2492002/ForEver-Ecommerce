@@ -14,7 +14,7 @@ import {
 import { useShopStore } from "../store/shopStore";
 
 const Collection = () => {
-  const [showFilter, setShowFilter] = useState(false);
+  const [showFilter, setShowFilter] = useState(true);
   const [category, setCategory] = useState([]);
   const [typeCategory, setTypeCategory] = useState([]);
   const [filterdProducts, setFilteredProducts] = useState([]);
@@ -83,6 +83,7 @@ const Collection = () => {
             {filterdProducts.map((product, index) => (
               <ProductCard
                 key={index}
+                id={product._id}
                 image={product.image[0]}
                 name={product.name}
                 price={product.price}

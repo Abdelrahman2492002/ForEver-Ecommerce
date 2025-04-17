@@ -8,6 +8,8 @@ import Footer from "./components/footer/Footer";
 import { useShopStore } from "./store/shopStore";
 import { useEffect } from "react";
 import { products } from "./assets/assets";
+import Searchbar from "./components/Searchbar";
+import Product from "./pages/Product";
 
 const App = () => {
   const setProducts = useShopStore((state) => state.setProducts);
@@ -23,11 +25,13 @@ const App = () => {
   return (
     <div className="font-outfit">
       <NavBar />
+      <Searchbar />
       <Routes>
         <Route index element={<Home />} />
         <Route path="/collection" element={<Collection />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/product/:id" element={<Product />} />
       </Routes>
       <Footer />
     </div>
