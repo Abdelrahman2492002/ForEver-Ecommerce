@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { products } from "../../assets/assets";
 import { useShopStore } from "../../store/shopStore";
 import SectionParagraph from "../common/SectionParagraph";
 import SectionTitle from "../common/SectionTitle";
@@ -16,6 +14,7 @@ const LatestCollection = () => {
         {allProducts.slice(0, 10).map((product, index) => (
           <ProductCard
             key={index}
+            id={product._id}
             image={product.image[0]}
             name={product.name}
             price={product.price}
