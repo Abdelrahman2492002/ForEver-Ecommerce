@@ -1,10 +1,14 @@
+import { Link } from "react-router";
 import { useShopStore } from "../../store/shopStore";
 
 const ProductCard = ({ ...props }) => {
   const currency = useShopStore((state) => state.currency);
 
   return (
-    <div className="text-greyMed cursor-pointer overflow-hidden text-sm">
+    <Link
+      to={`/product/${props.id}`}
+      className="text-greyMed cursor-pointer overflow-hidden text-sm"
+    >
       <img
         src={props.image}
         alt="product image"
@@ -17,7 +21,7 @@ const ProductCard = ({ ...props }) => {
           {props.price}
         </data>
       </div>
-    </div>
+    </Link>
   );
 };
 
