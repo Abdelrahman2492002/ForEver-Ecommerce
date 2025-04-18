@@ -38,6 +38,7 @@ const Product = () => {
         >
           <ViewProductImage images={item.image} />
           <ProductDetails
+            id={item._id}
             name={item.name}
             price={item.price}
             description={item.description}
