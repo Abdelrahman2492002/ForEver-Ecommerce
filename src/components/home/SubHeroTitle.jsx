@@ -8,7 +8,7 @@ const SubHeroTitle = ({ isReverse, title, height }) => {
       <span
         className={`bg-greyMed2 ${height ? height : "h-[2px]"} w-11`}
       ></span>
-      <p className="text-base font-medium md:text-lg">{title}</p>
+      <p className="text-sm font-medium uppercase md:text-base">{title}</p>
     </div>
   );
 };

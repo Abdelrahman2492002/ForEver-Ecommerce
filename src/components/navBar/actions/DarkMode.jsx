@@ -4,11 +4,7 @@ import { assets } from "../../../assets/assets";
 const DarkMode = () => {
   return (
     <div className="cursor-pointer">
-      <img
-        src={assets.darkIcon}
-        alt="nightMode icon"
-        className="w-6 h-6 md:w-8 md:h-8"
-      />
+      <img src={assets.darkIcon} alt="nightMode icon" className="h-6 w-6" />
     </div>
   );
 };

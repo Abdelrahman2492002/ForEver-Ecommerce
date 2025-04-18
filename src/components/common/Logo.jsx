@@ -8,7 +8,7 @@ const Logo = () => {
       <img
         src={mode === "dark" ? assets.logo_light : assets.logo_dark}
         alt="logo icon"
-        className="w-24 md:w-40"
+        className="w-24 md:w-36"
       />
     </Link>
   );

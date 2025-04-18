@@ -3,10 +3,10 @@ import SectionTitle from "../common/SectionTitle";
 
 const CollectionHeader = ({ onchange }) => {
   return (
-    <div className="flex flex-col items-center justify-between gap-5 lg:flex-row">
+    <div className="mb-6 flex flex-col items-center justify-between gap-5 lg:flex-row">
       <SectionTitle text1="All" text2="Collections" />
       <select
-        className="border-borderColor4 max-w-3xs border px-2 py-3 outline-0"
+        className="border-borderColor4 max-w-3xs border px-2 py-3 text-sm outline-0"
         onChange={onchange}
       >
         <option value="relavent">Sort by: Price: Relavent</option>

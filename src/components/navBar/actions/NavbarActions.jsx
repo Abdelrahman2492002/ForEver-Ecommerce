@@ -6,7 +6,7 @@ import Search from "./Search";
 
 const NavbarActions = () => {
   return (
-    <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
+    <div className="flex items-center gap-4 lg:gap-6">
       <DarkMode />
       <Search />
       <Log />

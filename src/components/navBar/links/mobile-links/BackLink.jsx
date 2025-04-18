@@ -5,12 +5,12 @@ const BackLink = ({ onclick }) => {
   return (
     <li
       onClick={onclick}
-      className="flex items-center gap-2 text-DarkLight p-3 border-b"
+      className="text-DarkLight flex cursor-pointer items-center gap-2 border-b p-3"
     >
       <img
         src={assets.dropdown_icon}
         alt="dropdown_icon"
-        className="rotate-180 w-2"
+        className="w-2 rotate-180"
       />
       <p>BACK</p>
     </li>

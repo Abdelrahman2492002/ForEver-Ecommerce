@@ -16,7 +16,7 @@ const ProductCard = ({ ...props }) => {
       />
       <div className="pt-5">
         <h3>{props.name}</h3>
-        <data value={props.price}>
+        <data className="font-medium" value={props.price}>
           {currency}
           {props.price}
         </data>

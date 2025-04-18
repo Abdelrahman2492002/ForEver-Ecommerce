@@ -10,7 +10,7 @@ const Search = () => {
       onClick={toggleSearch}
       src={assets.search_icon}
       alt="search icon"
-      className="h-4 w-4 cursor-pointer md:h-6 md:w-6"
+      className="w-5 cursor-pointer"
     />
   );
 };

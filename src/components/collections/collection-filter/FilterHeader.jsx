@@ -6,7 +6,7 @@ const FilterHeader = ({ showFilter, toggleShowFilter }) => {
       onClick={toggleShowFilter}
       className="flex items-center gap-2 max-sm:cursor-pointer"
     >
-      <h3 className="text-darkLight2 text-2xl font-light sm:text-3xl">
+      <h3 className="text-xl font-light text-black uppercase sm:text-2xl">
         Filter
       </h3>
       <img

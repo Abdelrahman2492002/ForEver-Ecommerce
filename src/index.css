@@ -15,19 +15,27 @@
   --color-greyMed2: #414141;
   --color-greyMed3: #5a5a5a;
   --color-greyLight: #868686;
-  --color-greyLight2: #707070;
+  --color-greyLight2: #6b7280;
+  --color-greyLight3: #374151;
   --color-greyExtraLight: #595959;
 
   --color-light: #ffffff;
+  --color-light2: #f7f7f7;
 
   --color-borderColor: #adadad;
   --color-borderColor2: #c7c7c7;
   --color-borderColor3: #c1c1c1;
   --color-borderColor4: #c8c8c8;
+  --color-borderColor5: #ebebeb;
+  --color-activeBorder: #ff8551;
 
   --text-13: 13px;
 }
 
 a.active + hr {
   opacity: 1;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

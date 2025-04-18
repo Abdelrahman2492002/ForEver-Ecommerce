@@ -33,7 +33,7 @@ const Collection = () => {
   }, [allProducts, category, typeCategory, orderPrice]);
 
   return (
-    <div className="mx-8 min-h-screen pt-7 pb-96 sm:mx-16 lg:mx-36">
+    <div className="border-borderColor4 mx-7 border-t pt-10 pb-96 sm:mx-16 lg:mx-32">
       <div className="flex flex-col gap-10 sm:flex-row">
         <div>
           <FilterHeader
@@ -79,7 +79,7 @@ const Collection = () => {
         </div>
         <div className="flex-1">
           <CollectionHeader onchange={(e) => setOrderPrice(e.target.value)} />
-          <div className="grid grid-cols-2 gap-x-7 gap-y-8 pt-11 md:grid-cols-3 md:gap-y-11 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
             {filterdProducts.map((product, index) => (
               <ProductCard
                 key={index}

@@ -2,11 +2,11 @@ import { NavLink } from "react-router";
 
 const NavigationLink = ({ path, children }) => {
   return (
-    <li className="text-DarkLight text-sm md:text-base flex flex-col">
+    <li className="text-DarkLight flex flex-col text-sm">
       <NavLink to={path} className="py-1">
         {children}
       </NavLink>
-      <hr className="w-2/4 bg-DarkLight opacity-0 mx-auto h-[2px]" />
+      <hr className="bg-DarkLight mx-auto h-[2px] w-2/4 opacity-0" />
     </li>
   );
 };

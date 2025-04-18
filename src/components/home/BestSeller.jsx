@@ -6,22 +6,22 @@ import ProductCard from "../common/ProductCard";
 
 const BestSeller = () => {
   const allProducts = useShopStore((state) => state.products);
-  const [bestSeller , setBestSeller] = useState([]);
+  const [bestSeller, setBestSeller] = useState([]);
 
   useEffect(() => {
-    if(allProducts) {
-       setBestSeller(allProducts.filter(product => (product.bestseller)));
+    if (allProducts) {
+      setBestSeller(allProducts.filter((product) => product.bestseller));
     }
-  } , [allProducts])
+  }, [allProducts]);
   return (
-    <div className="mx-7 pt-5 pb-20 sm:mx-24 lg:mx-44">
+    <div className="mx-7 pb-20 sm:mx-16 lg:mx-32">
       <SectionTitle text1="best" text2="seller" />
       <SectionParagraph
         text="Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the."
       />
-      <div className="grid grid-cols-2 gap-x-7 gap-y-8 pt-11 sm:grid-cols-3 md:grid-cols-4 md:gap-y-11 lg:grid-cols-5">
-        {bestSeller.slice(0,5).map((product, index) => (
+      <div className="grid grid-cols-2 gap-4 pt-11 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+        {bestSeller.slice(0, 5).map((product, index) => (
           <ProductCard
             key={index}
             id={product._id}
