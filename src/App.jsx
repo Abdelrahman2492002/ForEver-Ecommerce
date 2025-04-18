@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import { products } from "./assets/assets";
 import Searchbar from "./components/Searchbar";
 import Product from "./pages/Product";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   const setProducts = useShopStore((state) => state.setProducts);
@@ -25,6 +26,7 @@ const App = () => {
   return (
     <div className="font-outfit">
       <NavBar />
+      <ToastContainer />
       <Searchbar />
       <Routes>
         <Route index element={<Home />} />
