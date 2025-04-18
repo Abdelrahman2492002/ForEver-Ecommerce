@@ -20,6 +20,7 @@ const Collection = () => {
   const [filterdProducts, setFilteredProducts] = useState([]);
   const [orderPrice, setOrderPrice] = useState("");
   const allProducts = useShopStore((state) => state.products);
+  const searchText = useShopStore((state) => state.searchText);
 
   const handleFilterChange = (array, e, setterFn) => {
     const categoryArr = toggleCategory(array, e.target.value);
@@ -27,10 +28,15 @@ const Collection = () => {
   };
 
   useEffect(() => {
-    const filtered = filterProducts(allProducts, category, typeCategory);
+    let filtered = filterProducts(allProducts, category, typeCategory);
+    if (searchText.trim() !== "") {
+      filtered = filtered.filter((item) =>
+        item.name.toLowerCase().includes(searchText.toLowerCase()),
+      );
+    }
     const order = orderProducts(filtered, orderPrice);
     setFilteredProducts(order);
-  }, [allProducts, category, typeCategory, orderPrice]);
+  }, [allProducts, category, typeCategory, orderPrice, searchText]);
 
   return (
     <div className="border-borderColor4 mx-7 border-t pt-10 pb-96 sm:mx-16 lg:mx-32">
