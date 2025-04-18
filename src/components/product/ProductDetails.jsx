@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { useShopStore } from "../../store/shopStore";
 import ProductGuaranteeInfo from "./ProductGuaranteeInfo";
 import ProductRating from "./ProductRating";
 import ProductSize from "./ProductSize";
+import AddProductButton from "./AddProductButton";
 
-const ProductDetails = ({ name, price, description, sizes }) => {
+const ProductDetails = ({ id, name, price, description, sizes }) => {
+  const [size, setSize] = useState(false);
   const currency = useShopStore((state) => state.currency);
 
   return (
@@ -20,10 +23,8 @@ const ProductDetails = ({ name, price, description, sizes }) => {
         {price}
       </data>
       <p className="text-greyExtraLight text-sm md:text-base">{description}</p>
-      <ProductSize sizes={sizes} />
-      <button className="text-light active:bg-activeBorder active:text-dark mt-8 w-fit cursor-pointer bg-black px-5 py-3 text-sm font-semibold uppercase transition sm:px-8 sm:py-4 sm:text-base">
-        add to cart
-      </button>
+      <ProductSize size={size} setSize={setSize} sizes={sizes} />
+      <AddProductButton id={id} size={size} />
       <ProductGuaranteeInfo />
     </div>
   );
