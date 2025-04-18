@@ -2,7 +2,7 @@ import React from "react";
 import { assets } from "../../../assets/assets";
 import { useShopStore } from "../../../store/shopStore";
 
-const Cart = () => {
+const CartIcon = () => {
   const cartCount = useShopStore((state) => state.cartItemsCount());
 
   return (
@@ -15,4 +15,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default CartIcon;

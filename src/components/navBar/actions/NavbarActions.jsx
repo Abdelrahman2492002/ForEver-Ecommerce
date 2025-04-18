@@ -1,5 +1,5 @@
 import HamburgerMenu from "../links/mobile-links/HamburgerMenu";
-import Cart from "./Cart";
+import CartIcon from "./CartIcon";
 import DarkMode from "./DarkMode";
 import Log from "./Log";
 import Search from "./Search";
@@ -10,7 +10,7 @@ const NavbarActions = () => {
       <DarkMode />
       <Search />
       <Log />
-      <Cart />
+      <CartIcon />
       <HamburgerMenu />
     </div>
   );
