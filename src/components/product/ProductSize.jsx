@@ -1,8 +1,4 @@
-import { useState } from "react";
-
-const ProductSize = ({ sizes }) => {
-  const [size, setSize] = useState(false);
-
+const ProductSize = ({ size, setSize, sizes }) => {
   return (
     <div className="pt-3 sm:pt-5">
       <p className="text-greyExtraLight pb-4">Select Size</p>
