@@ -16,8 +16,8 @@ const Cart = () => {
   }, [cartItems]);
 
   return (
-    <div className="mx-7 min-h-screen py-5 sm:mx-16 lg:mx-32">
-      <div className="flex justify-start">
+    <div className="border-borderColor4 mx-7 min-h-screen border-t py-10 sm:mx-16 md:py-16 lg:mx-32">
+      <div className="flex justify-start text-lg sm:text-2xl">
         <SectionTitle text1="your" text2="cart" />
       </div>
       <div>
@@ -38,7 +38,11 @@ const Cart = () => {
           );
         })}
       </div>
-      <CartAmount />
+      <div className="mt-20 flex justify-end">
+        <div className="w-[450px]">
+          <CartAmount />
+        </div>
+      </div>
     </div>
   );
 };
