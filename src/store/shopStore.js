@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { addToCart, getCartItemsCount } from "./utility";
+import { addToCart, getCartItemsCount, updateQuantity } from "./utility";
 
 const shopStore = (set, get) => ({
   currency: "$",
@@ -17,6 +17,10 @@ const shopStore = (set, get) => ({
     })),
 
   cartItemsCount: () => getCartItemsCount(get().cartItems),
+  updateCartQuantity: (productId, size, quantity) =>
+    set((state) => ({
+      cartItems: updateQuantity(state.cartItems, productId, size, quantity),
+    })),
 });
 
 export const useShopStore = create(shopStore);
