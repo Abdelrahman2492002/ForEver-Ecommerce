@@ -22,7 +22,6 @@ export const addToCart = (items, productId, size) => {
 };
 
 export const getCartItemsCount = (cartItems) => {
-  console.log(cartItems);
   let count = 0;
   for (const items in cartItems) {
     for (const item in cartItems[items]) {
@@ -32,4 +31,27 @@ export const getCartItemsCount = (cartItems) => {
     }
   }
   return count;
+};
+
+export const generateCartProductList = (cartItems) => {
+  const tempData = [];
+
+  for (const items in cartItems) {
+    for (const item in cartItems[items]) {
+      if (cartItems[items][item] > 0) {
+        tempData.push({
+          _id: items,
+          size: item,
+          quantity: cartItems[items][item],
+        });
+      }
+    }
+  }
+  return tempData;
+};
+
+export const updateQuantity = (items, productId, size, quantity) => {
+  const copyItems = structuredClone(items);
+  copyItems[productId][size] = quantity;
+  return copyItems;
 };
