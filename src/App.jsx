@@ -11,6 +11,7 @@ import { products } from "./assets/assets";
 import Searchbar from "./components/Searchbar";
 import Product from "./pages/Product";
 import { ToastContainer } from "react-toastify";
+import Cart from "./pages/Cart";
 
 const App = () => {
   const setProducts = useShopStore((state) => state.setProducts);
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/product/:id" element={<Product />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />
     </div>
