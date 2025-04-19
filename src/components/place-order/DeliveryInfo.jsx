@@ -7,7 +7,7 @@ const DeliveryInfo = () => {
       <div className="mb-10 flex justify-start text-lg sm:text-2xl">
         <SectionTitle text1="delivery" text2="information" />
       </div>
-      <form className="mt-5 flex flex-col gap-4">
+      <div className="mt-5 flex flex-col gap-4">
         <div className="flex items-center gap-2.5">
           <DeliveryInput placeholder="First name" />
           <DeliveryInput placeholder="Last name" />
@@ -29,7 +29,7 @@ const DeliveryInfo = () => {
           className="border-borderColor4 outline-activeBorder w-full rounded-sm border p-3 text-sm"
           required
         />
-      </form>
+      </div>
     </div>
   );
 };
