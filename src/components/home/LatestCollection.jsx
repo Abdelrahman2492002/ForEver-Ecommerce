@@ -8,7 +8,9 @@ const LatestCollection = () => {
 
   return (
     <div className="mx-7 pb-20 sm:mx-16 lg:mx-32">
-      <SectionTitle text1="Latest" text2="Collections" />
+      <div className="text-xl sm:text-3xl">
+        <SectionTitle text1="Latest" text2="Collections" />
+      </div>
       <SectionParagraph text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the." />
       <div className="grid grid-cols-2 gap-4 pt-11 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {allProducts.slice(0, 10).map((product, index) => (
