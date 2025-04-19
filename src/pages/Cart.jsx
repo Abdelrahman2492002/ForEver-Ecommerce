@@ -3,6 +3,7 @@ import { useShopStore } from "../store/shopStore";
 import { generateCartProductList } from "../store/utility";
 import SectionTitle from "../components/common/SectionTitle";
 import CartProduct from "../components/cart/CartProduct";
+import CartAmount from "../components/cart/CartAmount";
 
 const Cart = () => {
   const cartItems = useShopStore((state) => state.cartItems);
@@ -37,6 +38,7 @@ const Cart = () => {
           );
         })}
       </div>
+      <CartAmount />
     </div>
   );
 };

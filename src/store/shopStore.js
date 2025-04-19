@@ -3,6 +3,7 @@ import { addToCart, getCartItemsCount, updateQuantity } from "./utility";
 
 const shopStore = (set, get) => ({
   currency: "$",
+  delivery__fee: 10,
   products: [],
   setProducts: (allProducts) => set({ products: allProducts }),
   searchText: "",

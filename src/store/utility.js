@@ -55,3 +55,17 @@ export const updateQuantity = (items, productId, size, quantity) => {
   copyItems[productId][size] = quantity;
   return copyItems;
 };
+
+export const countCartAmount = (cartItems, products) => {
+  let totalAmount = 0;
+  for (const items in cartItems) {
+    const product = products.find((item) => item._id === items);
+    for (const item in cartItems[items]) {
+      if (cartItems[items][item] > 0) {
+        totalAmount += cartItems[items][item] * product.price;
+      }
+    }
+  }
+
+  return totalAmount;
+};
