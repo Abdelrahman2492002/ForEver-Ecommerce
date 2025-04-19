@@ -18,7 +18,7 @@ const Hero = () => {
         <img
           src={assets.hero_img}
           alt="hero image"
-          className="max-h-[450px] w-full object-fill sm:w-1/2"
+          className="w-full object-fill sm:w-1/2"
         />
       </div>
     </div>
