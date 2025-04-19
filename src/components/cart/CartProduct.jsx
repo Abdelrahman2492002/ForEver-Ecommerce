@@ -31,7 +31,7 @@ const CartProduct = ({ id, image, name, price, size, quantity }) => {
       <div>
         <img
           src={assets.bin_icon}
-          className="w-5 cursor-pointer justify-self-end md:w-6"
+          className="w-5 cursor-pointer max-sm:justify-self-end md:w-6"
           alt="bin icon"
           onClick={() => updateQuantity(id, size, 0)}
         />
