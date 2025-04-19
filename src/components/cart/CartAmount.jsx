@@ -1,7 +1,7 @@
 import { useShopStore } from "../../store/shopStore";
 import { countCartAmount } from "../../store/utility";
 import SectionTitle from "../common/SectionTitle";
-import CartCheckoutButton from "./CartCheckoutButton";
+import PrimaryButton from "../common/PrimaryButton";
 import PriceRow from "./PriceRow";
 
 const CartAmount = () => {
@@ -23,7 +23,7 @@ const CartAmount = () => {
           value={subTotal + delivery__fee}
           isTitleBold={true}
         />
-        <CartCheckoutButton />
+        <PrimaryButton redirectTo="/place-order" text="Proceed to checkout" />
       </div>
     </div>
   );
