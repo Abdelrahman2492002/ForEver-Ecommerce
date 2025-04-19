@@ -4,7 +4,9 @@ import SectionTitle from "../common/SectionTitle";
 const CollectionHeader = ({ onchange }) => {
   return (
     <div className="mb-6 flex flex-col items-center justify-between gap-5 lg:flex-row">
-      <SectionTitle text1="All" text2="Collections" />
+      <div className="text-lg sm:text-2xl">
+        <SectionTitle text1="All" text2="Collections" />
+      </div>
       <select
         className="border-borderColor4 max-w-3xs border px-2 py-3 text-sm outline-0"
         onChange={onchange}

@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionTitle = ({ text1, text2 }) => {
   return (
-    <div className="flex items-center justify-center gap-1 text-2xl font-normal uppercase">
+    <div className="flex items-center justify-center gap-1 font-normal uppercase">
       <h2 className="text-greyLight3 font-medium">
         <span className="text-greyLight2">{text1}</span> {text2}
       </h2>

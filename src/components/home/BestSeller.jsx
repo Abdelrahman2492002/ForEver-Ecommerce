@@ -15,7 +15,9 @@ const BestSeller = () => {
   }, [allProducts]);
   return (
     <div className="mx-7 pb-20 sm:mx-16 lg:mx-32">
-      <SectionTitle text1="best" text2="seller" />
+      <div className="text-xl sm:text-3xl">
+        <SectionTitle text1="best" text2="seller" />
+      </div>
       <SectionParagraph
         text="Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the."
