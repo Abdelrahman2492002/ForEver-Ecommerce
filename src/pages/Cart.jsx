@@ -17,7 +17,7 @@ const Cart = () => {
 
   return (
     <div className="border-borderColor4 mx-7 min-h-screen border-t py-10 sm:mx-16 md:py-16 lg:mx-32">
-      <div className="flex justify-start text-lg sm:text-2xl">
+      <div className="mb-8 flex justify-start text-lg sm:text-2xl">
         <SectionTitle text1="your" text2="cart" />
       </div>
       <div>
