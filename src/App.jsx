@@ -13,6 +13,7 @@ import Product from "./pages/Product";
 import { ToastContainer } from "react-toastify";
 import Cart from "./pages/Cart";
 import PlaceOrder from "./pages/PlaceOrder";
+import MyOrder from "./pages/MyOrder";
 
 const App = () => {
   const setProducts = useShopStore((state) => state.setProducts);
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/product/:id" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/place-order" element={<PlaceOrder />} />
+        <Route path="/my-order" element={<MyOrder />} />
       </Routes>
       <Footer />
     </div>
