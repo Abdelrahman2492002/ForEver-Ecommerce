@@ -5,7 +5,7 @@ const CartProduct = ({ id, image, name, price, size, quantity }) => {
   const currency = useShopStore((state) => state.currency);
   const updateQuantity = useShopStore((state) => state.updateCartQuantity);
   return (
-    <div className="text-greyLight3 border-borderColor4 mt-4 grid grid-cols-[3fr_0.5fr_0.5fr] items-center border-t border-b py-4 md:grid-cols-[3fr_1fr_0.5fr]">
+    <div className="text-greyLight3 border-borderColor4 grid grid-cols-[3fr_0.5fr_0.5fr] items-center border-t border-b py-4 md:grid-cols-[3fr_1fr_0.5fr]">
       <div className="flex gap-4 md:gap-6">
         <img src={image[0]} alt="product image" className="w-20" />
         <div>
