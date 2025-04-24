@@ -1,12 +1,29 @@
-# React + Vite
+# Ecommerce - Clothing Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend-only ecommerce project for a clothing store, built using **React** and **Zustand** for state management. The project aims to deliver a clean and user-friendly shopping experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Product listing** with clean UI layout.
+- **Filter by category** (Men, Women, Kids).
+- **Add to cart** functionality.
+- **Product details view** (image, price, and description).
+- **Dark Mode** toggle for better accessibility and user comfort.
+- **State management using Zustand** instead of Context API.
+- **Clean code structure** with reusable components and utility functions.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Zustand
+- JavaScript (ES6+)
+- TailwindCSS
+- LocalStorage (for temporary data persistence)
+
+## Project Goals
+
+The goal of this project is to apply recently learned concepts in a practical environment, improve frontend development skills, and practice using a modern and scalable state management approach.
+
+---
+
+> **Note:** This project is inspired by a YouTube tutorial, but was rebuilt and improved with custom structure, better organization, and added features like Dark Mode.
